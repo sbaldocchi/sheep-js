@@ -1,0 +1,27 @@
+{
+  "name": "sheep",
+  "version": "1.0.0",
+  "description": "Javascript es6 module implementation of sheep.exe ((c) Tatsutoshi Nomura)",
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "module": "./dist/sheep.js",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@metaphorjs/observable": "^1.4.0"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}

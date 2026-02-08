@@ -1,10 +1,14 @@
 #Sheep.js
-Javascript implementation of sheep.exe ((c) Tatsutoshi Nomura)
+Javascript module implementation of sheep.exe ((c) Tatsutoshi Nomura) ES6 style + vite
 
 v1.0 beta
 
-Requires [MetaphorJs.lib.Observable](https://github.com/kuindji/metaphorjs-observable)
 
-[Demo](http://kuindji.com/js/sheep/demo.html)
+build lib:
 
-71k minified (including css and graphics), 48k minified and gzipped.
+npm run build
+
+
+demo/test:
+
+npm run dev

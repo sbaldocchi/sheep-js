@@ -1,4 +1,6 @@
 
-.idea
-/rsc/metaphorjs.observable.js
+.npmrc
+.vscode/
+/dist
 .DS_Store
+/node_modules
