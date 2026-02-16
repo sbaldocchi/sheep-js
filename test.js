@@ -1,6 +1,5 @@
-import Sheep from './index.js'
-
+import Sheep from "./index.js";
 
 new Sheep({
-    floors:'window, .floor'
-})
+  floors: "window, .floor",
+});

@@ -200,7 +200,23 @@ export class JumpDownAction extends Action {
 export class WalkAction extends Action {
   constructor(sheep) {
     super(sheep);
-    this.frames = [2, 3];
+    this.frames = [
+      2,
+      {
+        frame: 3,
+        action: () => {
+          const sheep = this._sheep;
+          const dir = sheep.getDirection();
+          const pos = sheep.getPosition();
+
+          pos.animateTo(
+            dir === "l" ? pos.getX() - 10 : pos.getX() + SIZE + 10,
+            pos.getY(),
+            1500,
+          );
+        },
+      },
+    ];
     this.frameItv = 300;
     this.xShift = 1;
     this.moveItv = 50;
@@ -216,7 +232,23 @@ export class WalkAction extends Action {
 export class RunAction extends Action {
   constructor(sheep) {
     super(sheep);
-    this.frames = [4, 5];
+    this.frames = [
+      4,
+      {
+        frame: 5,
+        action: () => {
+          const sheep = this._sheep;
+          const dir = sheep.getDirection();
+          const pos = sheep.getPosition();
+
+          pos.animateTo(
+            dir === "l" ? pos.getX() - 40 : pos.getX() + SIZE + 40,
+            pos.getY(),
+            1500,
+          );
+        },
+      },
+    ];
     this.frameItv = 300;
     this.xShift = 4;
     this.moveItv = 40;
